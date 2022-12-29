@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <h1>Etch-A-Sketch</h1>
+
+    <div class="container">
+
+        <div class="options">
+            <button type="button" class="clear">Clear</button>
+            <div class="choices">
+                <h2>Grid</h2>
+                <input type="range" min="1" max="50" value="25" class="slider" id="myRange">
+                <output id="demo">25 x 25</output>
+                <button type="button" class="gridLine"></button>
+            </div>
+
+            <div class="choices">
+                <h2>Brush Color</h2>
+                <input type="color" id="colorpicker" value="#000000">
+                <h2>Brush Presets</h2>
+                <button type="button" class="button" id="random">Random</button>
+                <button type="button" class="button" id="eraser">Eraser</button>
+            </div>
+        </div>
+        <div class="canvas"></div>
+
+    </div>
+
+
+    <footer>Designed by Andy Hu (2022)</footer>
+</body>
+
+</html>
